@@ -1,10 +1,10 @@
+import Head from 'next/head'
 import styled from 'styled-components'
 import {
   Box,
   Heading,
   Text,
 } from 'grommet'
-
 import withGrommet from '../lib/withGrommet'
 
 const StyledHeading = styled(Heading)`
@@ -29,6 +29,9 @@ export default withGrommet(() => (
     justify="center"
     fill
   >
+    <Head>
+      <title>Coming Soon</title>
+    </Head>
     <Logo />
     <Text
       margin="none"
