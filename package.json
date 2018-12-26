@@ -1,0 +1,16 @@
+{
+  "name": "amenic-site",
+  "version": "1.0.0",
+  "description": "Node - Next.js - Next - React - SSR - Docker",
+  "author": "Diego Bezerra",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}
