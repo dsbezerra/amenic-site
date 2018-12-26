@@ -4,13 +4,18 @@
   "description": "Node - Next.js - Next - React - SSR - Docker",
   "author": "Diego Bezerra",
   "scripts": {
-    "dev": "next",
-    "start": "next start",
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "build": "next build"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "express": "^4.16.4",
+    "grommet": "^2.2.1",
+    "grommet-icons": "^3.2.0",
     "next": "^7.0.2",
     "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react-dom": "^16.6.0",
+    "styled-components": "^4.0.3"
   }
 }
