@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:8
 
 RUN mkdir -p /opt/app
 RUN apk add --no-cache libc6-compat
@@ -9,6 +9,6 @@ EXPOSE 3000
 WORKDIR /opt/app
 COPY . /opt/app
 
-RUN npm install && npm run build
+RUN yarn && yarn build
 
-CMD [ "npm", "start" ]
+CMD [ "yarn", "start" ]
