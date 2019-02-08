@@ -1,12 +1,22 @@
 import Head from 'next/head'
+import {
+  Box,
+} from 'grommet'
+import { Header, Footer } from '.'
 
-export const Layout = ({ children, title = 'amenic - Montes Claros' }) => (
-  <div>
+const Layout = ({ children, title, ...rest }) => (
+  <Box responsive {...rest}>
     <Head>
       <title>{title}</title>
     </Head>
-    {/* TODO: Add header */}
+    {!rest.noHeader && <Header />}
     {children}
-    {/* TODO: Add footer */}
-  </div>
+    <Footer />
+  </Box>
 )
+
+Layout.defaultProps = {
+  title: 'amenic - Montes Claros',
+}
+
+export { Layout }

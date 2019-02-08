@@ -1,1 +1,10 @@
+export * from './DashedBorder'
+export * from './Device'
+export * from './Header'
+export * from './Home'
+export * from './Footer'
+export * from './Logo'
+export * from './Link'
+export * from './Section'
+
 export * from './layout'
