@@ -2,6 +2,8 @@ import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
+import { GA_TRACKING_ID } from '../lib/gtag'
+
 class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
@@ -17,6 +19,7 @@ class MyDocument extends Document {
         <Head>
           {styleTags}
           <meta charSet='utf-8' />
+          <meta name="description" content="Programação dos cinemas de Montes Claros e mais!" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
           <meta name="fragment" content="!" />
           <meta name="mobile-web-app-capable" content="yes" />
@@ -39,6 +42,21 @@ class MyDocument extends Document {
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="stylesheet" type="text/css" href="/static/css/nprogress.css" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `
+            }}
+          />
         </Head>
         <body
           style={{
