@@ -121,7 +121,7 @@ class IndexPage extends React.Component {
                   </a>
                 </Box>
               </Box>
-              <Box basis="100%" />
+              <Box basis="100%" style={{ pointerEvents: 'none' }}/>
               <Text color="#777" size="xsmall">
                 * No momento o aplicativo só cobre os cinemas da cidade de Montes Claros, MG.
               </Text>
@@ -159,7 +159,7 @@ class IndexPage extends React.Component {
         <Section background="#222" pad={{ vertical: 'large' }}>
           <Box align="center">
             <Heading level="2">
-              Ajuda como?
+              Conheça
             </Heading>
           </Box>
           <Box direction="row-responsive">
