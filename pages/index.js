@@ -116,7 +116,7 @@ class IndexPage extends React.Component {
                 <DashedBorder pad={{ vertical: 'medium' }} color="#999" />
 
                 <Box direction="row" align="start" pad={{ bottom: 'large' }}>
-                  <a href="https://play.google.com/store/apps/details?id=com.diegobezerra.amenic" target="_blank">
+                  <a href="https://play.google.com/store/apps/details?id=com.diegobezerra.amenic" target="_blank" rel="noopener noreferrer">
                     <Image width="150px" src="/static/images/google-play.png" />
                   </a>
                 </Box>

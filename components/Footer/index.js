@@ -69,16 +69,7 @@ const Footer = ({ width }) => {
         >
           <Box gap="xxsmall" direction="row">
             <Text color="text-1" size="small">
-              Feito por
-            </Text>
-            <Text size="small">
-              <FooterLink
-                href="https://twitter.com/dsbezerra1"
-                color="#fff"
-                target="_blank"
-              >
-                Diego Bezerra
-              </FooterLink>
+              Feito por Diego Bezerra
             </Text>
           </Box>
 
